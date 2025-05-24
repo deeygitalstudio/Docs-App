@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', "sans-serif"
+}
+
+.cont{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #cf9aff, #95c0ff);
+    padding: 4% 4%;
+
+    color: white;
+    overflow: hidden;
+
+}
+
+.cont h1{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.cont h1 img{
+    width: 60px;
+    
+}
+.cont button img{
+    width: 25px;
+    margin-right: 10px
+}
+
+.cont button{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#9418fd, #571094);
+    outline: 0;
+    border: 0;
+    padding: 15px 25px;
+    color: white;
+    border-radius: 40px;
+    margin: 30px 0 20px;
+    cursor: pointer;
+    
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    min-height: 150px;
+    background: white;
+    color: #333;
+    border-radius: 5px;
+    padding: 20px;
+    margin:  20px 0;
+    overflow: hidden;
+}
+
+.input-box img{
+    width: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.notes-cont{
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    height: auto;
+    
+}
+
+@media (min-width: 768px) {
+    .notes-cont {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns, each taking 1 fraction */
+    }
+  }
+
+@media (min-width: 1024px) {
+    .notes-cont {
+      grid-template-columns: repeat(4, 1fr); /* 4 columns, each taking 1 fraction */
+    }
+  }
